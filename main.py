@@ -5,6 +5,7 @@ from selenium.webdriver.support.ui import Select
 from bs4 import BeautifulSoup as bs
 import csv
 import time
+from pwinput import pwinput
 
 # the webdriver is returning error that the chromedriver version is not compatible with the current browser version
 # Thus I am autoUpdating the chromedriver if it needs update each time I run the code, else I will skip
@@ -15,7 +16,7 @@ chromedriver_autoinstaller.install()  # check if the chromedriver needs any upda
 def getCredentials():
     credentials = []
     username = input("Enter your username: ")
-    password = input("Enter your password: ")
+    password = pwinput("Enter your password: ", "*")
     credentials.append(username)
     credentials.append(password)
     return credentials
