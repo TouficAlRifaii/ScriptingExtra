@@ -3,6 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
 from bs4 import BeautifulSoup as bs
+import csv
 
 # the webdriver is returning error that the chromedriver version is not compatible with the current browser version
 # Thus I am autoUpdating the chromedriver if it needs update each time I run the code, else I will skip
@@ -19,7 +20,7 @@ def getCredentials():
     return credentials
 
 
-def GetOffering(credentials):
+def getOffering(credentials):
 
     driver = webdriver.Chrome()  # Generate the Browser
     driver.get("https://banweb.lau.edu.lb/")  # Go to the lau banner
@@ -40,3 +41,20 @@ def GetOffering(credentials):
     driver.find_element(by=By.CSS_SELECTOR, value='[value="Section Search"]').click()
     offering = bs(driver.page_source, "html.parser").prettify()
     return offering
+
+
+def getRows(html_offering):
+    soup = bs(offering, "html.parser")
+    table = soup.find("table", {"class":"datadisplaytable"})
+    # print(table)
+    rows = list()
+    for row in table.findAll("tr"):
+        rows.append(row)
+    return rows
+
+
+userCredentials = getCredentials()
+offering = getOffering(userCredentials)
+rows = getRows(offering)
+
+
