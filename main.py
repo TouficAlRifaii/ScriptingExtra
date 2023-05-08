@@ -86,8 +86,8 @@ def parseToCSV(table_rows):
             if len(cells) > 4:
                 if eval(cells[4]) == 2:
                     writer.writerow(cells)
-            else:
-                writer.writerow(cells)
+            # else:
+            #     writer.writerow(cells)
 
 
 userCredentials = getCredentials()

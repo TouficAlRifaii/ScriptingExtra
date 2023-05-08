@@ -21,10 +21,6 @@ CRN,Subj,Crse,Sec,Cmp,Cred,Title,Days,Time,Cap,Act,Rem,WL Cap,WL Act,WL Rem,XL C
 10695,CSC,310B,31B,2,1.000,Algorithms & Data Struct. Lab,W,05:00 pm-07:50 pm,25,4,21,15,0,15,0,0,0,TBA
 10696,CSC,310B,32A,2,1.000,Algorithms & Data Struct. Lab,T,05:00 pm-07:50 pm,25,20,5,15,0,15,0,0,0,TBA
 10697,CSC,310B,32B,2,1.000,Algorithms & Data Struct. Lab,T,05:00 pm-07:50 pm,25,6,19,15,0,15,0,0,0,TBA
-M,03:00 pm-04:59 pm,TBA
-M,03:00 pm-04:59 pm,TBA
-T,03:30 pm-05:29 pm,TBA
-T,03:30 pm-05:29 pm,TBA
 10706,CSC,326,31,2,3.000,Operating Systems,TR,08:00 am-09:15 am,40,40,0,15,4,11,0,0,0,TBA
 10711,CSC,375,31,2,3.000,Database Management Systems,TR,09:30 am-10:45 am,40,32,8,15,5,10,40,40,0,P
 10714,CSC,430,31,2,3.000,Computer Networks,TR,03:30 pm-04:45 pm,40,27,13,15,0,15,0,0,0,P
