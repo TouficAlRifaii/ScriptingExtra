@@ -74,8 +74,8 @@ def parseToCSV(table_rows):
         for i in range(2, len(table_rows)):
             cells = list()
             row = table_rows[i]
-            for cell in row.findAll(["td", "tr"]):
-                if row.findAll(["td", "tr"]).index(cell) != 0 and row.findAll(["td", "tr"]).index(
+            for cell in row.findAll(["td", "th"]):
+                if row.findAll(["td", "th"]).index(cell) != 0 and row.findAll(["td", "th"]).index(
                         cell) < 20:
                     if cell.string:
                         cells.append(cell.string.strip())
